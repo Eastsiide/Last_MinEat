@@ -1,7 +1,3 @@
-import json
-import sys
-
-
 #Store available recipes
 recipes = {
   "Chicken Mole": ["chicken, mole, mexican rice, refried beans, pinto beans"],
@@ -10,18 +6,27 @@ recipes = {
 }
 
 
-# Get ingredients from JavaScript
-user_ingredients = json.loads(sys.argv[1]
+# Ask user to input ingredients available at home
+user_input = input("Enter your ingredients (comma-separated): ").lower()
+user_ingredients = [ingredient.strip() for ingredient in user_input.split(",")]
 
 
 # Find matching recipes
 matching_recipes = []
-for recipe, ingredients in recipes.items():
-  if all(ingredient in user_ingredients for ingredient in ingredients):
-      matching_recipes.append(recipe)
+for recipe, ingredients in recipes.items()
+    if all(ingredient in user_ingredients for ingredient in ingredients):
+        matching_recipes.append(recipe)
 
 
-if matching_recipes:
-    print(json.dumps({"recipes": matching_recipes}))
+print("\n Searching for recipes...\n")
+
+
+if matching recipes:
+    print("You can make the following Last MinEat recipe(s):")
+    for recipe in matching_recipes:
+        print(f"- {recipe]")
 else:
-    print(json.dumps({"error": "No exact matches found. Try adding more ingredients!"}))
+    print("No exact matches found. Try adding more ingredients!")
+
+
+print("\n Enjoy your Last MinEat meal!")

@@ -1,6 +1,6 @@
-# Store available recipes with correct formatting
+# Store available recipes
 recipes = {
-    "Chicken Mole": ["chicken", "mole", "mexican rice", "refried beans", "pinto beans"],
+    "Chicken Mole": ["chicken", "mole", "mexican rice", "rice", "refried beans", "beans", "pinto beans"],
     "Carne Asada Tortas": ["skirt steak", "refried beans", "crema", "guacamole"],
     "Tostadas with Chorizo": ["chicharron", "refried beans", "guacamole", "tostada", "queso fresco"]
 }
@@ -19,7 +19,7 @@ for recipe, ingredients in recipes.items():
 
 print("\nSearching for recipes...\n")
 
-# Correct indentation of if-else block
+
 if matching_recipes:
     print("You can make the following Last MinEat recipe(s):")
     for recipe in matching_recipes:

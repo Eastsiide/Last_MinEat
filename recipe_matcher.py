@@ -2,7 +2,7 @@
 recipes = {
     "Chicken Mole": ["chicken", "mole", "mexican rice", "rice", "refried beans", "beans", "pinto beans"],
     "Carne Asada Tortas": ["skirt steak", "refried beans", "crema", "guacamole"],
-    "Tostadas with Chorizo": ["chicharron", "refried beans", "guacamole", "tostada", "queso fresco"]
+    "Tostadas with Chicharron": ["chicharron", "refried beans", "guacamole", "tostada", "queso fresco"]
 }
 
 
